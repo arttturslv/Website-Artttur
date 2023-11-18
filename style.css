@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+  :root {
+    --light: #E5E5E5;
+    --dark: #2F2F2F;
+}
+
+/* RESPONSIVO */
+
+@media (min-width: 1024px) {
+    #navbarMB {
+        display: none !important;
+    }
+}
+@media (max-width: 1024px) {
+    #navbarPC {
+        display: none!important;
+    }
+    #navbarMB {
+        display: flex !important;
+    }
+    .mensagem {
+        flex-wrap: wrap-reverse !important;
+    }
+    .texto {
+        width: 100% !important;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .redes {
+        margin: 0 auto!important;
+        padding: 0;
+    }
+    .imagem {
+        display: flex;
+        width: 100% !important;
+    }
+    .nome {
+        display: flex;
+        align-self: self-end;
+    }
+  }
+
+  #navbarPC {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+}
+#navbarMB {
+    display: flex;
+}
+
+.menuMB ul {
+    display: block;
+}
+.menuMB ul li {
+    position: relative;
+    left: 70%;
+    padding-top: 5px;
+}
+.menuMB {
+    background-color:aquamarine !important;
+    display: none;
+    z-index: -5000;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.anima {
+    animation: slide-in 0.5s;
+}
+@keyframes slide-out {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+
+header {
+    width: 100%;
+}
+.nomeMB {
+    margin: 0;
+    width: 80%;
+
+
+}
+.menuIcon {
+    display: flex;
+    margin: 0;
+    right: 0%;
+    justify-content: end;
+}
+.btnSwitch {
+    width: 40px!important;
+    align-self: flex-end;
+}
+#btnIcon {
+    width: 40px!important;
+}
+#btnTitle {
+    font-size: 2.5rem;
+}
+
+
+body {
+    width: 90%;
+}
+/* GLOBAIS */
+* {
+    /*background-color: var(--light);*/
+    color: var(--dark);
+    font-family: 'Inconsolata', monospace;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+h1, h2 {
+    font-family: 'Lilita One', sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+a:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+li {
+    list-style: none;
+    height: auto;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* NAVBAR*/
+    
+
+
+
+
+/*menu*/
+.btnLight {
+    display: none;
+}
+.b {
+    padding: 0 10px;
+    width: 35px;
+}
+.b:hover {
+    transform: scale(1.05);
+}
+
+/*INTRODUCAO*/
+.icon {
+    width: 30px;
+}
+
+.primaryColor {
+    stroke: var(--light);
+}
+
+.secundaryColor {
+    stroke: var(--dark);
+}
+
+.redes {
+    display: flex;
+    margin-left: 15px;
+    width: 50%;
+}
+.mensagem {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+.texto  {
+    width: 50%;
+}
+.imagem {
+    width: 50%;
+    max-width: 500px;
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sk {
+    width: 110px;
+    height: 110px;
+    margin: 0;
+}
+
+/* projetos */
+
+
+.imgEffect  {
+    position: absolute;
+}
+.hoverEffect {
+    display: flex;
+    margin: 0 auto;
+    height: 100px;
+
+}
+.hoverEffect:hover {
+    display: flex;
+}
+.limite {
+    width: 356px;
+    height: 176px;
+    display: flex;
+    align-items: center;
+    margin:0;
+}
