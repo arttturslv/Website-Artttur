@@ -1,88 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-  :root {
+:root {
     --light: #E5E5E5;
     --dark: #2F2F2F;
+    height: 100vh;
+    overflow: none;
 }
+
+body {
+    max-width: 1600px;
+    height: 100vh;
+    cursor: url(./assets/btn/nrm.svg), auto;
+    background-color: var(--light);
+}
+
+.cursorClick {
+    cursor: url(./assets/btn/normal.svg), auto;
+}
+
+.eu-invisivel {
+    width: 400px;
+    height: 400px;
+}
+
+#eu {
+    position: absolute;
+    transform: translate(-57%, -30%);
+    z-index: -1;
+}
+
 
 /* RESPONSIVO */
 
 @media (min-width: 1024px) {
-    #navbarMB {
+    #navbar-mobile {
         display: none !important;
     }
 }
+
 @media (max-width: 1024px) {
-    #navbarPC {
-        display: none!important;
+    #navbar-desktop {
+        display: none !important;
     }
-    #navbarMB {
+
+    .pj {
+        display: block !important;
+    }
+
+    #navbar-mobile {
         display: flex !important;
     }
-    .mensagem {
+
+    #intro {
         flex-wrap: wrap-reverse !important;
     }
-    .texto {
+
+    .introducao-text {
         width: 100% !important;
         text-align: center;
         justify-content: center;
         margin: 0;
         padding: 0;
     }
-    .redes {
-        margin: 0 auto!important;
+
+    .redes-sociais {
+        margin: 0 auto !important;
         padding: 0;
     }
+
     .imagem {
         display: flex;
         width: 100% !important;
     }
+
     .nome {
         display: flex;
         align-self: self-end;
     }
-  }
+}
 
-  #navbarPC {
+#navbar-desktop {
     display: flex;
     justify-content: space-around;
     height: 60px;
     align-items: center;
 }
-#navbarMB {
+
+#navbar-mobile {
     display: flex;
 }
 
-.menuMB ul {
+.menu-mobile ul {
     display: block;
+    text-align: end;
 }
-.menuMB ul li {
+
+.menu-mobile ul li {
     position: relative;
-    left: 70%;
     padding-top: 5px;
 }
-.menuMB {
-    background-color:aquamarine !important;
+
+.menu-mobile {
     display: none;
+    padding-bottom: 10px;
     z-index: -5000;
+    border-top: solid 1px rgb(188, 184, 184);
+    border-bottom: solid 1px rgb(188, 184, 184);
 }
 
 @keyframes slide-in {
     0% {
         transform: translateY(-50px);
     }
+
     100% {
         transform: translateY(0px);
     }
 }
+
 .anima {
     animation: slide-in 0.5s;
 }
+
 @keyframes slide-out {
     0% {
         transform: translateY(0px);
     }
+
     100% {
         transform: translateY(-50px);
     }
@@ -92,33 +137,23 @@
 header {
     width: 100%;
 }
-.nomeMB {
-    margin: 0;
-    width: 80%;
 
-
-}
-.menuIcon {
+.menu-icons {
     display: flex;
     margin: 0;
     right: 0%;
     justify-content: end;
 }
+
 .btnSwitch {
-    width: 40px!important;
+    width: 40px !important;
     align-self: flex-end;
 }
-#btnIcon {
-    width: 40px!important;
-}
-#btnTitle {
-    font-size: 2.5rem;
-}
-
 
 body {
     width: 90%;
 }
+
 /* GLOBAIS */
 * {
     /*background-color: var(--light);*/
@@ -127,24 +162,26 @@ body {
     margin: 0 auto;
     font-size: 1.1rem;
 }
-h1, h2 {
+
+h1,
+h2 {
     font-family: 'Lilita One', sans-serif;
 }
-h1{
+
+h1 {
     font-size: 3rem;
 }
+
 a {
     text-decoration: none;
     padding: 0 10px;
 }
-a:hover {
-    background-color: var(--dark);
-    color: var(--light);
-}
+
 li {
     list-style: none;
     height: auto;
 }
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -154,7 +191,7 @@ ul {
 }
 
 /* NAVBAR*/
-    
+
 
 
 
@@ -163,15 +200,36 @@ ul {
 .btnLight {
     display: none;
 }
+
 .b {
     padding: 0 10px;
     width: 35px;
 }
+
 .b:hover {
     transform: scale(1.05);
 }
 
 /*INTRODUCAO*/
+
+#intro,
+#sobre,
+#skills {
+    padding-top: 150px;
+}
+
+#sobre,
+#skills,
+#projetos {
+    padding-top: 120px;
+}
+
+.redes-sociais {
+    padding-top: 25px;
+}
+
+
+
 .icon {
     width: 30px;
 }
@@ -184,54 +242,82 @@ ul {
     stroke: var(--dark);
 }
 
-.redes {
+.redes-sociais {
     display: flex;
-    margin-left: 15px;
-    width: 50%;
+    margin-left: 0px;
+    width: 240px;
 }
-.mensagem {
+
+footer {
+    margin-top: 120px;
+}
+
+#intro {
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
 }
-.texto  {
+
+.introducao-text {
     width: 50%;
 }
-.imagem {
+
+.introducao-img {
     width: 50%;
     max-width: 500px;
 }
 
 
-#container {
+#container-skills {
     display: flex;
     flex-wrap: wrap;
 }
-.sk {
-    width: 110px;
-    height: 110px;
-    margin: 0;
-}
-
-/* projetos */
 
 
-.imgEffect  {
-    position: absolute;
-}
-.hoverEffect {
+.btn-projeto {
     display: flex;
-    margin: 0 auto;
-    height: 100px;
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+}
+
+.btn {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--light);
+    color: var(--dark);
+    width: 50%;
 
 }
-.hoverEffect:hover {
-    display: flex;
+
+.colorAnimation:hover {
+    background-color: var(--dark);
+    color: var(--light);
 }
-.limite {
-    width: 356px;
-    height: 176px;
+
+
+.pjText {
+    padding: 20px;
+    font-size: 100%;
+}
+
+.projeto-imagem {
+    padding: 20px;
+    min-width: 40%;
+}
+
+.projeto-imagem>img {
+    width: 100%;
+}
+
+.pj {
     display: flex;
     align-items: center;
-    margin:0;
+
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    bottom: 0px;
 }
