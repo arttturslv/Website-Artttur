@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('/css/responsive.css');
+
+
+/* CSS GLOBAL */
+:root {
+    --light: #E5E5E5;
+    --light: #E5E5E5;
+    --dark: #2F2F2F;
+    cursor: url(/assets/Icons/mouse/defaultMouse-icon.svg), auto;
+    height: 100vh;
+    overflow: none;
+}
+body {
+    max-width: 1300px;
+    height: 100vh;
+    background-color: var(--light);
+    padding-top: 15px;
+    width: 90%;
+}
+* {
+    /*background-color: var(--light);*/
+    color: var(--dark);
+    font-family: 'Inconsolata', monospace;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+h1, h2 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 3rem;
+}
+h2 {
+    padding-bottom: 0.8rem;
+}
+a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+li {
+    list-style: none;
+}
+ul {
+    display: flex;
+    align-items: center;
+}
+footer {
+    height: 8rem;
+    text-align: center;
+    display:flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > #btn-seeGithub {
+    margin-top: 4rem;
+    border-radius: 5px;
+}
+footer > h6 {
+    width: 100%;
+}
+
+/* CORES GLOBAIS */
+.primaryColor {
+    stroke: var(--light);
+}
+.primaryTextColor {
+    fill: var(--light);
+}
+.secundaryColor {
+    stroke: var(--dark);
+}
+.secundaryTextColor {
+    fill: var(--dark);
+}
+
+/* EFEITOS GLOBAIS */
+.hover-effect:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+.onClickMouse {
+    cursor: url(/assets/Icons/mouse/clickableMouse-icon.svg), auto;
+}
+.scale:hover{
+    scale: 1.1;
+}
+#sobre,
+#skills,
+#projetos {
+    padding-top: 2rem;
+}
+
+
+
+
+/* NAVBAR */ 
+#navbar-desktop {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+}
+
+#navbar-mobile {
+    display: flex;
+    align-items: center;
+}
+.menu-mobile {
+    display: none;
+    padding-bottom: 10px;
+    z-index: -5000;
+    border-top: solid 1px rgb(188, 184, 184);
+    border-bottom: solid 1px rgb(188, 184, 184);
+    position: absolute;
+    width:90%;
+}
+.menu-mobile ul {
+    display: block;
+    text-align: end;
+}
+.menu-mobile ul li {
+    position: relative;
+    padding-top: 5px;
+}
+.menu-icons {
+    display: flex;
+}
+
+
+
+
+/* INTRODUCAO */ 
+#intro {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    padding-top: 7rem;
+}
+.introducao-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.introducao-text > p {
+    text-align: center;
+}
+.introducao-img {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.redes-sociais {
+    padding-top: 25px;
+    display: flex;
+    width: 14rem;
+}
+
+#caricatura-svg {
+    position: relative;
+    left: -40px;
+    height: 50%;
+    width: 80%;
+ } 
+#arturMov1 {
+    display: block;
+    animation: ease-in-out;
+}
+#arturMov2 {
+    display: none;
+    animation: ease-in-out;
+}
+#arturMov3 {
+    display: none;
+    animation: ease-in-out;
+}
+
+
+
+
+/* CONHECIMENTOS */ 
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* PROJETOS */ 
+.btn-projeto {
+    display: flex;
+    position: relative;
+    bottom: 30px;
+    width: 99.8%;
+    border:  var(--dark) 1px solid;
+}
+.btn-style {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--light);
+    color: var(--dark);
+    width: 50%;
+
+}
+.ex-texto {
+    padding: 0 20px 20px 20px;
+    font-size: 100%;
+}
+
+.ex-imagem {
+    padding: 20px 20px 0 20px;
+    min-width: 40%;
+}
+.ex-imagem > img {
+    width: 100%;
+}
+
+
+.disable {
+    cursor: url(/assets/Icons/mouse/disable.svg), auto;
+}
+.disable:hover {
+    color:#843232;
+    background: #aba9a9;
+}
