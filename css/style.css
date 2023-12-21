@@ -7,7 +7,7 @@
     --light: #E5E5E5;
     --light: #E5E5E5;
     --dark: #2F2F2F;
-    cursor: url(assets/Icons/mouse/defaultMouse-icon.svg), auto;
+    cursor: url(/assets/Icons/mouse/defaultMouse-icon.svg), auto;
     height: 100vh;
     overflow: none;
 }
@@ -81,7 +81,7 @@ footer > h6 {
     color: var(--light);
 }
 .onClickMouse {
-    cursor: url(assets/Icons/mouse/clickableMouse-icon.svg), auto;
+    cursor: url(/assets/Icons/mouse/clickableMouse-icon.svg), auto;
 }
 .scale:hover{
     scale: 1.1;
@@ -110,7 +110,7 @@ footer > h6 {
 .menu-mobile {
     display: none;
     padding-bottom: 10px;
-    z-index: -5000;
+    z-index: 1;
     border-top: solid 1px rgb(188, 184, 184);
     border-bottom: solid 1px rgb(188, 184, 184);
     position: absolute;
@@ -220,7 +220,7 @@ footer > h6 {
 
 
 .disable {
-    cursor: url(assets/Icons/mouse/disable.svg), auto;
+    cursor: url(/assets/Icons/mouse/disable.svg), auto;
 }
 .disable:hover {
     color:#843232;
@@ -263,7 +263,7 @@ footer > h6 {
 
     .redes-sociais {
         margin: 0 auto !important;
-        padding: 0;
+        padding-top: 25px;
     }
 
     .imagem {

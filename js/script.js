@@ -98,3 +98,19 @@ function onAnimation(caricaturaFrame1, caricaturaFrame2, caricaturaFrame3) {
 }
 
 
+SVGInject.setOptions({
+    onFail: function(img, svg) {
+      // if injection fails show the img element
+      img.classList.remove('injectable');
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // inject all img elements with class name `injectable`
+    SVGInject(document.querySelectorAll('img.injectable'), {
+      onAllFinish: function() {
+        // the SVG injection has finished for all three images
+
+      }
+    });
+  });
