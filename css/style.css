@@ -7,7 +7,7 @@
     --light: #E5E5E5;
     --light: #E5E5E5;
     --dark: #2F2F2F;
-    cursor: url(/assets/Icons/mouse/defaultMouse-icon.svg), auto;
+    cursor: url(../assets/Icons/mouse/defaultMouse-icon.svg), auto;
     height: 100vh;
     overflow: none;
 }
@@ -81,7 +81,7 @@ footer > h6 {
     color: var(--light);
 }
 .onClickMouse {
-    cursor: url(/assets/Icons/mouse/clickableMouse-icon.svg), auto;
+    cursor: url(../assets/Icons/mouse/clickableMouse-icon.svg), auto;
 }
 .scale:hover{
     scale: 1.1;
@@ -89,7 +89,7 @@ footer > h6 {
 #sobre,
 #skills,
 #projetos {
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 
@@ -220,7 +220,7 @@ footer > h6 {
 
 
 .disable {
-    cursor: url(/assets/Icons/mouse/disable.svg), auto;
+    cursor: url(../assets/Icons/mouse/disable.svg), auto;
 }
 .disable:hover {
     color:#843232;
