@@ -11,10 +11,16 @@
     height: 100vh;
     overflow: none;
 }
+html {
+    background-position: 0px 80px;
+    background-image: url("/assets/natal/led.svg");
+    background-repeat: repeat-x;
+    background-color: var(--light);
+    background-size: 200px;
+}
 body {
     max-width: 1300px;
     height: 100vh;
-    background-color: var(--light);
     padding-top: 15px;
     width: 90%;
 }
@@ -94,7 +100,6 @@ footer > h6 {
 
 
 
-
 /* NAVBAR */ 
 #navbar-desktop {
     display: flex;
@@ -115,6 +120,7 @@ footer > h6 {
     border-bottom: solid 1px rgb(188, 184, 184);
     position: absolute;
     width:90%;
+    background-color: var(--light);
 }
 .menu-mobile ul {
     display: block;
@@ -162,10 +168,11 @@ footer > h6 {
 
 #caricatura-svg {
     position: relative;
-    left: -40px;
+    left: -20px;
     height: 50%;
     width: 80%;
  } 
+ 
 #arturMov1 {
     display: block;
     animation: ease-in-out;
@@ -229,11 +236,24 @@ footer > h6 {
 
 
 /* RESPONSIVO */
-
+#tag {
+    width: 70px;
+}
 @media (min-width: 1024px) {
     #navbar-mobile {
         display: none !important;
     }
+    .ex-imagem {
+        width: 50%;
+    }
+    .ex-texto {
+        width: 50%;
+        padding-top: 1rem;
+    }
+    .projetoExemplo{
+        display: flex;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -274,6 +294,7 @@ footer > h6 {
     h1, h2 {
         font-size: 2rem !important;
     }
+
 
 
 }
