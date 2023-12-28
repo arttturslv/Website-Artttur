@@ -12,11 +12,7 @@
     overflow: none;
 }
 html {
-    background-position: 0px 80px;
-    background-image: url("/assets/natal/led.svg");
-    background-repeat: repeat-x;
     background-color: var(--light);
-    background-size: 200px;
 }
 body {
     max-width: 1300px;
