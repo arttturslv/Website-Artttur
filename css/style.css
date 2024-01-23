@@ -139,6 +139,7 @@ footer > h6 {
     flex-wrap: wrap-reverse;
     align-items: center;
     padding-top: 7rem;
+    
 }
 .introducao-text {
     width: 50%;
@@ -155,6 +156,7 @@ footer > h6 {
     max-width: 500px;
     display: flex;
     align-items: center;
+    
 }
 .redes-sociais {
     padding-top: 25px;
@@ -164,7 +166,7 @@ footer > h6 {
 
 #caricatura-svg {
     position: relative;
-    left: -20px;
+    left: -40px;
     height: 50%;
     width: 80%;
  } 
