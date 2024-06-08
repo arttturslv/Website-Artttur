@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 import Navbar from './components/Navbar.jsx'
@@ -11,25 +11,33 @@ import Footer from './components/Footer.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
+  const [theme, setTheme] = useState('light');
+
   return (
-    <div className=''>
+    <div id='at' className={`${theme ?? 'dark'}`}>
 
-      <div className='bg-platinum max-w-[1240px] w-[100%] space-y-8'>
+      <div className='w-screen flex justify-center bg-platinum dark:bg-jet'>
 
-        <Navbar />
+        <div className='   dark:text-platinum max-w-[1240px] w-[100%]  space-y-8 text-jet'>
 
-        <Introducao/>
+          <Navbar setTheme={setTheme} theme={theme} />
 
-        <Sobre/>
+          <Introducao theme={theme} />
 
-        <Skills/>
+          <Sobre />
 
-        <Projetos/>
+          <Skills />
 
-        <Footer/>
+          <Projetos />
 
+          <Footer />
+
+
+        </div>
 
       </div>
+
+
     </div>
   )
 }

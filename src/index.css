@@ -5,17 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  line-height: 1.5;
-  font-weight: 400;
-  font-family: 'Inconsolata', monospace;
-  background-color: #E5E5E5;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0 !important;;
-}
-
 .ba {
   padding:0.5rem 0.5rem;
   margin:0 0.5rem;
@@ -28,22 +17,37 @@
   border-bottom-left-radius:15px 255px;
 }
 
+* {
+  font-family: 'Inconsolata', monospace;
+}
+ 
 h5 {
   font-weight: 800;
 }
+
+
+
+.ttt:hover {
+  animation: type 1s step-start ;
+}
+
+@keyframes type{
+  from { 
+    width: 0;
+    text-decoration: wavy 1px red;
+    text-decoration: underline 2;
+  }
+  to { 
+    width: 100%;
+    color:#646cff
+  }
+ }
 
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
-
-.hover-effect:hover {
-  background-color: #1a1a1a;
-  color: #f9f9f9;
-}
-
-
 
 h1 {
   font-size: 3.2em;
@@ -57,4 +61,12 @@ h2 {
   font-family: 'Lilita One', sans-serif;
   text-align: left;
 
+}
+
+#at {
+  position: absolute;
+  left: 0;
+  top:0;
+  justify-content: center;
+  display: flex;
 }
