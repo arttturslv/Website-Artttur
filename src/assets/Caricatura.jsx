@@ -14,7 +14,6 @@ export default function Caricatura ({theme}) {
     const [isVisible, setIsVisible] = useState(1);
 
     function onAnimation() {
-      console.log(theme);
         if(theme=='dark') {
             setTimeout(function(){
                 setIsVisible(1);
@@ -44,8 +43,14 @@ export default function Caricatura ({theme}) {
      
     }
 
+    const [initialRender, setInitialRender] = useState(true);
+
     useEffect(()=>{
+      if(!initialRender) {
         onAnimation();
+      } else {
+        setInitialRender(false)
+      }
     },[theme])
 
 
