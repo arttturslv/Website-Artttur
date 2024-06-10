@@ -14,7 +14,7 @@ export default function Github ({theme}) {
       <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      className="pt-0.5 hover:scale-105 cursor-pointer ease-in-out w-24 h-10"
+      className="pt-0.5  hover:scale-105 cursor-pointer ease-in-out w-10 h-10"
 
     >
       <path

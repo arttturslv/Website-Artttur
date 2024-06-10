@@ -13,7 +13,7 @@ export default function Email ({theme}) {
 
     return (
       <svg
-      className="pt-1 pl-1 hover:scale-105 cursor-pointer ease-in-out w-28 h-10"
+      className="pt-1 pl-1 hover:scale-105 cursor-pointer ease-in-out w-10 h-10"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
     >
