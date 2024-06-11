@@ -1,16 +1,31 @@
 import DevelopmentTag from "../DevelopmentTag"
 import ContentTag from "../ContentTag"
-
+import ProjetoImage from "../ProjetoImage.jsx"
+import WebsiteIcon from '../../assets/icons/contact/Website.jsx'
+import IconExpander from "../IconExpander.jsx"
 import GithubIcon from '../../assets/icons/contact/Github.jsx'
+
+import puclove from '../../assets/projects/puclove.webp'
+import games from '../../assets/projects/games.webp'
+import guru from '../../assets/projects/guru.webp'
+
+import { motion } from "framer-motion"
+
 export default function ProjetoItem({title, text, githubURL, image, devProgress, tags}) {
     return (
-        <div className="block px-6 sm:px-2 gap-6 lg:flex lg:space-y-0 space-y-4 items-center">
+        <motion.div 
+        
+            initial={{opacity:0, y: 75}}
+            whileInView={{opacity:1, y: 0}}
+            transition={{duration: 0.5, delay:0.25}}
+            viewport={{amount:'some', once: true}}
+        
+        
+        className="block gap-6 lg:flex lg:space-y-0 space-y-4 items-center">
             <div className="relative lg:w-[50%] h-min">
-                <img className="ba" loading="lazy" src={image} alt=""></img>
-                <div className="flex absolute w-full h-10 bottom-0 ">
-                    <div onClick={()=> window.open(githubURL)} className="absolute right-0 bottom-4 w-10 hover:scale-110">
-                        <GithubIcon/>
-                    </div>
+                <ProjetoImage imageInicial={image} images={[puclove, games, guru]}/>
+                <div className="flex absolute right-0 bottom-0 justify-end p-4">
+                    <IconExpander action={console.log('damn')} IconJSX={<WebsiteIcon/>} text='/website' />
                 </div>
             </div>
             <div className="lg:w-[50%]">
@@ -28,7 +43,7 @@ export default function ProjetoItem({title, text, githubURL, image, devProgress,
                 }
                 </div>
             </div>
-    </div>
+    </motion.div>
 
     )
 }

@@ -14,19 +14,19 @@ import javaScriptIcon from '../../assets/icons/tech/JavaScript.png'
 
 export default function Skills() {
     return (
-        <section id="skills"  className='px-16'>
+        <section id="knowledge"  className='sm:px-16 px-6 '>
           <h2>Conhecimentos</h2>
-          <div id="skills-container" className='flex flex-wrap gap-3 py-3 justify-center'>
-            <TechItem techName={'React'} techImage={reactIcon}/>
-            <TechItem techName={'JavaScript'} techImage={javaScriptIcon}/>
-            <TechItem techName={'Tailwind'} techImage={tailwindIcon}/>
-            <TechItem techName={'CSS'} techImage={cssIcon}/>
-            <TechItem techName={'HTML'} techImage={htmlIcon}/>
-            <TechItem techName={'React Native'} techImage={reactNativeIcon}/>
-            <TechItem techName={'Figma'} techImage={figmaIcon}/>
-            <TechItem techName={'Wordpress'} techImage={wordpressIcon}/>
-            <TechItem techName={'Java'} techImage={javaIcon}/>
-            <TechItem techName={'GIT'} techImage={gitIcon}/>
+          <div id="skills-container" className='px-2 flex flex-wrap gap-3 py-3 justify-center'>
+            <TechItem name={'React'}  alternativeTitle={'A maravilha da modularidade'} image={reactIcon}/>
+            <TechItem name={'JavaScript'}  alternativeTitle={'desenhar'} image={javaScriptIcon}/>
+            <TechItem name={'Tailwind'}  alternativeTitle={'CSS 2.0'} image={tailwindIcon}/>
+            <TechItem name={'CSS'}  alternativeTitle={'desenhar'} image={cssIcon}/>
+            <TechItem name={'HTML'}  alternativeTitle={'desenhar'} image={htmlIcon}/>
+            <TechItem name={'React Native'}  alternativeTitle={'desenhar'} image={reactNativeIcon}/>
+            <TechItem name={'Figma'}  alternativeTitle={'desenhar'} image={figmaIcon}/>
+            <TechItem name={'Wordpress'}  alternativeTitle={'desenhar'} image={wordpressIcon}/>
+            <TechItem name={'Java'}  alternativeTitle={'desenhar'} image={javaIcon}/>
+            <TechItem name={'GIT'}  alternativeTitle={'desenhar'} image={gitIcon}/>
           </div>
         </section>
     )
