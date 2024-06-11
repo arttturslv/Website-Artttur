@@ -24,7 +24,7 @@ export default function Navbar({setTheme, theme}) {
             </div>
 
             <div className=" px-6 flex justify-between">
-                <div className=" overflow-hidden flex align-middle max-md:hidden ">
+                <div className=" overflow-hidden  align-middle max-md:hidden flex ">
                     <ul className="flex text-center items-center gap-1 ">
                         <li className=" px-3 text-[1.2rem] group hover:bg-jet dark:hover:bg-platinum"><a className=" dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet " href="\#about">Sobre</a></li>
                         <li className=" px-3 text-[1.2rem] group hover:bg-jet dark:hover:bg-platinum"><a className=" dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#knowledge">Skills</a></li>
@@ -44,11 +44,11 @@ export default function Navbar({setTheme, theme}) {
                 </div>
             </div>
 
-            <div id='menuMobile' className="overflow-hidden hidden absolute left-0 top-16 align-middle">
+            <div id='menuMobile' className="overflow-hidden hidden w-full absolute left-0 top-16 align-middle">
                 <ul className=" text-right items-center border-y-[1px] border-jet">
-                    <li className=" px-3 pr-24 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className="  dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#about">Sobre</a></li>
-                    <li className=" px-3 pr-24 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className="  dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#knowledge">Skills</a></li>
-                    <li className=" px-3 pr-24 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className="  dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#projects">Projetos</a></li>
+                    <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className="  dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#about">Sobre</a></li>
+                    <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className="  dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#knowledge">Skills</a></li>
+                    <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className="  dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#projects">Projetos</a></li>
                 </ul>
             </div>
         </header>
