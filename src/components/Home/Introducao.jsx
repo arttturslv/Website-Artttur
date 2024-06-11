@@ -22,8 +22,8 @@ export default function Introducao ({theme}) {
             className="  dark:text-platinum space-y-1 text-center ">
               <p>Oi, eu sou o</p>
               <h1 className='' >Artur</h1>
-              <p>Estudante de ADS, 
-                <CustomToolTip text={'Bugs são funcionalidades não pensadas'}>
+              <p>Estudante de ADS 
+                <CustomToolTip text={<>Implementando <strike>bugs</strike> features!</>}>
               programador            
               </CustomToolTip>
               </p>
@@ -41,7 +41,7 @@ export default function Introducao ({theme}) {
              transition={{duration: 0.5, delay:0.25}}
              viewport={{amount:'some', once: 'true'}}
          
-            className='w-[400px]'>
+            className='sm:w-[400px] w-[100vw]'>
               <CustomToolTip text={'óleo sobre tela. "autoretrato".'}>
                 <Caricatura theme={theme}></Caricatura>
               </CustomToolTip>

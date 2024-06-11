@@ -1,17 +1,22 @@
 import * as React from "react"
 import { motion } from "framer-motion"
-import { useEffect } from "react";
-import { useState } from 'react';
+import { useEffect, useState } from "react";
+import {  } from 'react';
 
 export default function Caricatura ({theme}) {
+  const [isVisible, setIsVisible] = useState(1);
+  const [corPrimaria, setCorPrimaria] = useState(theme=='light'?'#2F2F2F':'#E5E5E5');
 
-    let corPrimaria='#2F2F2F'
+    useEffect(() => {
+      if(theme=='dark') {
+        setCorPrimaria('#E5E5E5')
+      } else {
+        setCorPrimaria('#2F2F2F')
+      }
+    },[theme]);
 
-    if(theme=='dark') {
-        corPrimaria='#E5E5E5'
-    }
 
-    const [isVisible, setIsVisible] = useState(1);
+
 
     function onAnimation() {
         if(theme=='dark') {
@@ -50,6 +55,8 @@ export default function Caricatura ({theme}) {
         onAnimation();
       } else {
         setInitialRender(false)
+        if(theme=='dark')
+          setIsVisible(3)
       }
     },[theme])
 

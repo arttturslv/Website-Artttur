@@ -10,7 +10,9 @@ import Blog from './pages/Blog.jsx';
 
 export default function App() {
 
-  const [theme, setTheme] = useState('light');
+  const initialTheme = localStorage.getItem('theme');
+
+  const [theme, setTheme] = useState(initialTheme!='dark'?'light':'dark');
 
     const router = createBrowserRouter([
       {

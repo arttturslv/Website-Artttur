@@ -13,10 +13,6 @@
   
 }
 
-* {
-  font-family: 'Inconsolata', monospace;
-}
- 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -33,3 +29,7 @@ h5 {
   font-weight: 800;
 }
 
+:root {
+  scroll-behavior: smooth;
+  font-family: 'Inconsolata', monospace;
+}

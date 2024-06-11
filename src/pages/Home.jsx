@@ -15,8 +15,8 @@ export default function Home({theme, setTheme}) {
 
     return (
         <div id='at' className={`${theme ?? 'dark'}`}>
-          <div className='w-screen flex justify-center bg-platinum dark:bg-jet'>
-            <div className=' dark:text-platinum max-w-[1240px] w-[100%] space-y-8 text-jet'>
+          <div className='max-sm:w-screen flex justify-center bg-platinum dark:bg-jet'>
+            <div className=' dark:text-platinum max-w-[1240px] max-sm:w-[100%] space-y-8 text-jet'>
               <Navbar setTheme={setTheme} theme={theme} />
               <Introducao theme={theme} />
               <Sobre />

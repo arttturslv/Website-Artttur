@@ -33,10 +33,10 @@ export default function Introducao () {
                   Tenho uma paixão especial pelo <strong>desenvolvimento web</strong>, especialmente pela criação de <strong>designs</strong> e codificação de páginas utilizando <strong>React e Tailwind</strong>, afinal, sou um dev front-end.
                   No entanto, estou ansioso para aprender outras linguagens e tecnologias para ter maior <strong>autonomia</strong> e atuar tanto no front-end quanto no back-end.                
                 </p>
-                <p className='sm:text-[1.3em] text-[1.1rem] gap-2 flex text-left py-2'>
+                <p className='sm:text-[1.3em] text-[1.1rem] gap-2 flex text-left py-2 flex-wrap'>
                   Manda um<strong>email: </strong>
                   <CustomToolTip text={'Clique para copiar'} textAction={'Copiado!'} >
-                    <span className=" text-xl underline peer" onClick={(e) => salvarClipboard(e)}> arttturslv@gmail.com</span>
+                    <span className=" text-md underline peer" onClick={(e) => salvarClipboard(e)}> arttturslv@gmail.com</span>
                   </CustomToolTip>  
                 </p>
               </div>
