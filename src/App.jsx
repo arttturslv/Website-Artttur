@@ -1,45 +1,31 @@
-import { useEffect, useState } from 'react'
-import './App.css'
+import { useState } from 'react'
+import Routes from './routes/routes.jsx';
 
-import Navbar from './components/Navbar.jsx'
-import Introducao from './components/Home/Introducao.jsx'
-import Sobre from './components/Home/Sobre.jsx'
-import Skills from './components/Home/Skills.jsx'
-import Projetos from './components/Home/Projetos.jsx'
-import Footer from './components/Footer.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Home from './pages/Home.jsx';
+import Blog from './pages/Blog.jsx';
+
+
+
+export default function App() {
 
   const [theme, setTheme] = useState('light');
 
+    const router = createBrowserRouter([
+      {
+        path: "/",
+        element: <Home theme={theme} setTheme={setTheme}/>
+      },
+      {
+        path: "/b-log",
+        element: <Blog theme={theme} setTheme={setTheme}/>
+      }
+    ])
+
+
   return (
-    <div id='at' className={`${theme ?? 'dark'}`}>
-
-      <div className='w-screen flex justify-center bg-platinum dark:bg-jet'>
-
-        <div className='   dark:text-platinum max-w-[1240px] w-[100%]  space-y-8 text-jet'>
-
-          <Navbar setTheme={setTheme} theme={theme} />
-
-          <Introducao theme={theme} />
-
-          <Sobre />
-
-          <Skills />
-
-          <Projetos />
-
-          <Footer />
-
-
-        </div>
-
-      </div>
-
-
-    </div>
+    <RouterProvider router={router} />
   )
 }
 
-export default App
