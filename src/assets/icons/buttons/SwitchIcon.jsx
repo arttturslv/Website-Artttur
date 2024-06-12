@@ -29,7 +29,7 @@ export default function Switch({ setTheme, theme }) {
                 viewBox="0 0 69 31"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="cursor-pointer"
+                className="pointer"
             >
 
                 <g id="Switch/Variant3">
@@ -58,7 +58,7 @@ export default function Switch({ setTheme, theme }) {
                 viewBox="0 0 69 31"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="cursor-pointer"
+                className="pointer"
             >
 
                 <g id="Switch/Variant3">
