@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .sketch-border {
+    @apply p-2 m-2 ml-0 mr-2 text-base border-[3px] border-solid border-[#41403E] [border-top-left-radius:255px_15px] [border-top-right-radius:15px_225px] [border-bottom-right-radius:225px_15px] [border-bottom-left-radius:15px_255px];
+  }
+  
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 800;
+}
+h2 {
+  font-size: 2.2em;
+  line-height: 1.1;
+  font-family: 'Lilita One', sans-serif;
+  text-align: left;
+}
+h5 {
+  font-weight: 800;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-family: 'Inconsolata', monospace;
+  cursor: url(../src/assets/icons/pointers/default.svg), auto;
+}
+
+.pointer {
+  cursor: url(../src/assets/icons/pointers/pointer.svg), pointer;
+}
