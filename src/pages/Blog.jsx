@@ -24,7 +24,7 @@ export default function Blog({ theme, setTheme }) {
             <Post
               title='Commits semânticos'
               text={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quia labore quasi unde sit ipsum fugit at ad reiciendis rem, corrupti doloremque et repudiandae sint saepe facilis? Molestiae, vitae accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam, vero dolorum aperiam rerum, veniam quod accusamus minus temporibus doloribus, minima consequuntur fugit. Quidem nisi iste labore quae veritatis beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique illum ab minima distinctio vel libero veritatis saepe, totam, reprehenderit, consequatur accusamus. Aspernatur beatae perferendis architecto consequuntur velit odio iure veniam!'}
-              tags={['html', 'css']} />
+              tags={['html']} />
             <Post
               title='Commits semânticos'
               text={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quia labore quasi unde sit ipsum fugit at ad reiciendis rem, corrupti doloremque et repudiandae sint saepe facilis? Molestiae, vitae accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam, vero dolorum aperiam rerum, veniam quod accusamus minus temporibus doloribus, minima consequuntur fugit. Quidem nisi iste labore quae veritatis beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique illum ab minima distinctio vel libero veritatis saepe, totam, reprehenderit, consequatur accusamus. Aspernatur beatae perferendis architecto consequuntur velit odio iure veniam!'}
