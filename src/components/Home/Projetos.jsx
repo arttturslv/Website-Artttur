@@ -14,10 +14,6 @@ import guru1 from '../../assets/projects/guru1.webp'
 
 import jogodavelha from '../../assets/projects/jogodavelha.webp'
 
-import portifolio from '../../assets/projects/portifolio.webp'
-import portifolio1 from '../../assets/projects/portifolio1.webp'
-
-
 export default function Projetos({ title, text, githubURL }) {
 
   return (

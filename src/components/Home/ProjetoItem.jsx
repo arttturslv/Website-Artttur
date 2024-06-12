@@ -5,13 +5,9 @@ import WebsiteIcon from '../../assets/icons/contact/Website.jsx'
 import IconExpander from "../IconExpander.jsx"
 import GithubIcon from '../../assets/icons/contact/Github.jsx'
 
-import puclove from '../../assets/projects/puclove.webp'
-import games from '../../assets/projects/games.webp'
-import guru from '../../assets/projects/guru.webp'
-
 import { motion } from "framer-motion"
 
-export default function ProjetoItem({title, text, githubURL, image, devProgress, tags}) {
+export default function ProjetoItem({title, text, githubURL, websiteURL, initialImage, images, devProgress, tags}) {
     return (
         <motion.div 
         
@@ -23,9 +19,10 @@ export default function ProjetoItem({title, text, githubURL, image, devProgress,
         
         className="block gap-6 lg:flex lg:space-y-0 space-y-4 items-center">
             <div className="relative lg:w-[50%] h-min">
-                <ProjetoImage imageInicial={image} images={[puclove, games, guru]}/>
+                <ProjetoImage imageInicial={initialImage} images={images}/>
                 <div className="flex absolute right-0 bottom-0 justify-end p-4">
-                    <IconExpander action={console.log('damn')} IconJSX={<WebsiteIcon/>} text='/website' />
+                   {githubURL? <IconExpander action={() => window.open(githubURL)} IconJSX={<GithubIcon/>} text='/github' /> :<></>} 
+                   {websiteURL? <IconExpander action={() => window.open(websiteURL)} IconJSX={<WebsiteIcon/>} text='/website' /> :<></>} 
                 </div>
             </div>
             <div className="lg:w-[50%]">
@@ -37,8 +34,8 @@ export default function ProjetoItem({title, text, githubURL, image, devProgress,
                 
                 <div className="gap-2 flex flex-wrap ">
                 {
-                    tags?.map((tag, _) => (
-                        <ContentTag text={tag}/>
+                    tags?.map((tag, index) => (
+                        <ContentTag key={index} text={tag}/>
                     ))
                 }
                 </div>

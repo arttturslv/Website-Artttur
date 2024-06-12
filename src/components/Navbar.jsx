@@ -20,16 +20,16 @@ export default function Navbar({setTheme, theme}) {
     return (
         <header className="max-w-[1240px] justify-around flex relative left-0 top-0 py-4 ">
             <div className="overflow-hidden justify-end flex group">
-                <a  href="\"><h1 className="lg:text-[3rem] text-[2.5rem] dark:text-platinum text-jet">Artttur</h1></a>
+                <a  href="\"><h1 className="pointer lg:text-[3rem] text-[2.5rem] dark:text-platinum text-jet">Artttur</h1></a>
             </div>
 
             <div className=" px-6 flex justify-between">
                 <div className=" overflow-hidden  align-middle max-md:hidden flex ">
-                    <ul className="flex text-center items-center gap-1 ">
-                        <li className=" px-3 text-[1.2rem] group hover:bg-jet dark:hover:bg-platinum"><a className=" dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet " href="\#about">Sobre</a></li>
-                        <li className=" px-3 text-[1.2rem] group hover:bg-jet dark:hover:bg-platinum"><a className=" dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#knowledge">Skills</a></li>
-                        <li className=" px-3 text-[1.2rem] group hover:bg-jet dark:hover:bg-platinum"><a className=" dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#projects">Projetos</a></li>
-                        <div className="size-10 pt-1 flex items-center">
+                    <ul className="flex  text-center items-center gap-1 ">
+                        <li className="px-3 text-[1.2rem] group hover:bg-jet dark:hover:bg-platinum"><a className="pointer dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet " href="\#about">Sobre</a></li>
+                        <li className="px-3 text-[1.2rem] group hover:bg-jet dark:hover:bg-platinum"><a className="pointer dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#knowledge">Skills</a></li>
+                        <li className="px-3 text-[1.2rem] group hover:bg-jet dark:hover:bg-platinum"><a className="pointer dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#projects">Projetos</a></li>
+                        <div className=" size-10 pt-1 flex items-center">
                             <Switch setTheme={setTheme} theme={theme} />
                         </div>
                     </ul>
@@ -46,9 +46,9 @@ export default function Navbar({setTheme, theme}) {
 
             <div id='menuMobile' className="overflow-hidden hidden w-full absolute left-0 top-16 align-middle">
                 <ul className=" text-right items-center border-y-[1px] border-jet">
-                    <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className="  dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#about">Sobre</a></li>
-                    <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className="  dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#knowledge">Skills</a></li>
-                    <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className="  dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#projects">Projetos</a></li>
+                    <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className=" pointer dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#about">Sobre</a></li>
+                    <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className=" pointer dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#knowledge">Skills</a></li>
+                    <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><a className=" pointer dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" href="\#projects">Projetos</a></li>
                 </ul>
             </div>
         </header>

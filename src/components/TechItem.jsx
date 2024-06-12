@@ -6,7 +6,6 @@ export default function techItem({ name, image }) {
         
         initial={{opacity:0, x: -75}}
         whileInView={{opacity:1, x: 0}}
-        once
         transition={{duration: 0.5, delay:0.25}}
         viewport={{amount:'some', once: 'true'}}
     
