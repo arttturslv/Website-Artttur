@@ -1,7 +1,8 @@
 import * as React from "react"
-export default function Website() {
+export default function Website({action}) {
     return (
         <svg
+            onClick={action}
             viewBox="0 0 39 39"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

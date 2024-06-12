@@ -1,6 +1,6 @@
 export default function IconExpander({action, IconJSX, text}) {
     return (
-        <div onClick={()=> action} className="pointer group hover:bg-jet transition-all duration-200 flex items-center hover:px-2 rounded-xl bottom-4  hover:scale-110">
+        <div onClick={action} className="pointer group hover:bg-jet transition-all duration-200 flex items-center hover:px-2 rounded-xl bottom-4  hover:scale-110">
             <div className="">
                 {IconJSX}
             </div>

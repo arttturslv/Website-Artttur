@@ -1,7 +1,8 @@
 import * as React from "react"
-export default function Figma() {
+export default function Figma({action}) {
     return (
         <svg
+        onClick={action}
         viewBox="0 0 33 33"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

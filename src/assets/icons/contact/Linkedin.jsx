@@ -1,5 +1,5 @@
 import * as React from "react"
-export default function Linkedin ({theme}) {
+export default function Linkedin ({theme, action}) {
 
   let corPrimaria = "#2F2F2F";
   let corSecundaria = "#E5E5E5";
@@ -12,7 +12,7 @@ export default function Linkedin ({theme}) {
 
     return (
   <svg
-  
+    onClick={action}
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     className="pointer pt-0.5 hover:scale-105  ease-in-out w-10 h-10"

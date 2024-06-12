@@ -16,7 +16,6 @@ export default function ProjetoItem({title, text, githubURL, websiteURL, initial
             transition={{duration: 0.5, delay:0.25}}
             viewport={{amount:'some', once: true}}
         
-        
         className="block gap-6 lg:flex lg:space-y-0 space-y-4 items-center">
             <div className="relative lg:w-[50%] h-min">
                 <ProjetoImage imageInicial={initialImage} images={images}/>

@@ -17,7 +17,8 @@ export default function Introducao() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.25 }}
       viewport={{ amount: 'some', once: 'true' }}
-      className='sm:px-16 px-6'>
+      className='sm:px-16 px-6'
+      id="about">
       <h2>Sobre</h2>
       <div className="px-2">
         <p className='sm:text-[1.3em] text-[1.1rem] text-left py-2'>

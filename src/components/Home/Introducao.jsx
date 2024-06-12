@@ -23,9 +23,9 @@ export default function Introducao ({theme}) {
               <p>programador   </p>          
               </CustomToolTip>
               <div className="flex justify-between items-center">
-                <GithubIcon  theme={theme}/>
-                <EmailIcon  theme={theme}/>
-                <LinkedinIcon theme={theme}/>
+                <GithubIcon action={() => window.open('https://github.com/arttturslv/')}  theme={theme}/>
+                <EmailIcon action={() => window.open('mailto:arttturslv@gmail.com')} theme={theme}/>
+                <LinkedinIcon action={() => window.open('https://www.linkedin.com/in/arttturslv/')} theme={theme}/>
               </div>
             </motion.div>
             <motion.div 

@@ -1,12 +1,9 @@
 import { useState } from 'react'
-import Routes from './routes/routes.jsx';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, createHashRouter } from 'react-router-dom'
 
 import Home from './pages/Home.jsx';
 import Blog from './pages/Blog.jsx';
-
-
 
 export default function App() {
 
@@ -14,7 +11,7 @@ export default function App() {
 
   const [theme, setTheme] = useState(initialTheme!='dark'?'light':'dark');
 
-    const router = createBrowserRouter([
+    const router = createHashRouter([
       {
         path: "/",
         element: <Home theme={theme} setTheme={setTheme}/>
@@ -24,7 +21,6 @@ export default function App() {
         element: <Blog theme={theme} setTheme={setTheme}/>
       }
     ])
-
 
   return (
     <RouterProvider router={router} />

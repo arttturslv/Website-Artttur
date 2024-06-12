@@ -1,5 +1,5 @@
 import * as React from "react"
-export default function Email ({theme}) {
+export default function Email ({theme, action}) {
 
   
   let corPrimaria = "#2F2F2F";
@@ -13,6 +13,7 @@ export default function Email ({theme}) {
 
     return (
       <svg
+      onClick={action}
       className=" pointer pt-1 pl-1 hover:scale-105 cursor-pointer ease-in-out w-10 h-10"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"

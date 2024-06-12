@@ -1,5 +1,5 @@
 import * as React from "react"
-export default function Github ({theme}) {
+export default function Github ({theme, action}) {
 
   let corPrimaria = "#2F2F2F";
   let corSecundaria = "#E5E5E5";
@@ -15,7 +15,7 @@ export default function Github ({theme}) {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       className="pointer pt-0.5  hover:scale-105 ease-in-out w-10 h-10"
-
+      onClick={action}
     >
       <path
         stroke={corPrimaria}

@@ -65,7 +65,7 @@ export default function Projetos({ title, text, githubURL }) {
       </div>
     </section>
     <div className=' flex justify-center w-[100%] h-16'>
-      <Button content={"Ver mais no Github"} action={() =>window.open('https://github.com/arttturslv/')}></Button>
+      <Button content={"Ver mais no Github"} action={() => window.open('https://github.com/arttturslv/')}></Button>
     </div>
     </>
   )
