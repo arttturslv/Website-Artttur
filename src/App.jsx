@@ -11,7 +11,7 @@ export default function App() {
 
   const [theme, setTheme] = useState(initialTheme!='dark'?'light':'dark');
 
-    const router = createHashRouter([
+    const router = createBrowserRouter([
       {
         path: "/",
         element: <Home theme={theme} setTheme={setTheme}/>
