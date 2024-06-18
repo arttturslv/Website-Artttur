@@ -8,11 +8,11 @@ export default function Blog({ theme, setTheme }) {
   return (
     <div id='at' className={`${theme ?? 'dark'}`}>
       <div className='w-screen flex justify-center bg-platinum dark:bg-jet'>
-        <div className='dark:text-platinum  max-w-[1240px] w-[100%] space-y-8 text-jet'>
+        <div className='dark:text-platinum h-screen  max-w-[1240px] w-[100%] space-y-8 text-jet'>
           
           <Navbar setTheme={setTheme} theme={theme} />
 
-          <div className='flex flex-col justify-center items-center gap-4'>
+          <div className='flex flex-col justify-center  items-center gap-4'>
 
             <code className='flex text-[18px] gap-2 group'>
               <h1>&#x0007B;</h1>
@@ -21,27 +21,7 @@ export default function Blog({ theme, setTheme }) {
               <h1>&#x0007D;</h1>
             </code>
 
-            <Post
-              title='Commits semânticos'
-              text={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quia labore quasi unde sit ipsum fugit at ad reiciendis rem, corrupti doloremque et repudiandae sint saepe facilis? Molestiae, vitae accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam, vero dolorum aperiam rerum, veniam quod accusamus minus temporibus doloribus, minima consequuntur fugit. Quidem nisi iste labore quae veritatis beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique illum ab minima distinctio vel libero veritatis saepe, totam, reprehenderit, consequatur accusamus. Aspernatur beatae perferendis architecto consequuntur velit odio iure veniam!'}
-              tags={['html']} />
-            <Post
-              title='Commits semânticos'
-              text={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quia labore quasi unde sit ipsum fugit at ad reiciendis rem, corrupti doloremque et repudiandae sint saepe facilis? Molestiae, vitae accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam, vero dolorum aperiam rerum, veniam quod accusamus minus temporibus doloribus, minima consequuntur fugit. Quidem nisi iste labore quae veritatis beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique illum ab minima distinctio vel libero veritatis saepe, totam, reprehenderit, consequatur accusamus. Aspernatur beatae perferendis architecto consequuntur velit odio iure veniam!'}
-              tags={['html', 'css']} />     
-            <Post
-              title='Commits semânticos'
-              text={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quia labore quasi unde sit ipsum fugit at ad reiciendis rem, corrupti doloremque et repudiandae sint saepe facilis? Molestiae, vitae accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam, vero dolorum aperiam rerum, veniam quod accusamus minus temporibus doloribus, minima consequuntur fugit. Quidem nisi iste labore quae veritatis beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique illum ab minima distinctio vel libero veritatis saepe, totam, reprehenderit, consequatur accusamus. Aspernatur beatae perferendis architecto consequuntur velit odio iure veniam!'}
-              tags={['html', 'css']} />     
-            <Post
-              title='Commits semânticos'
-              text={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quia labore quasi unde sit ipsum fugit at ad reiciendis rem, corrupti doloremque et repudiandae sint saepe facilis? Molestiae, vitae accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam, vero dolorum aperiam rerum, veniam quod accusamus minus temporibus doloribus, minima consequuntur fugit. Quidem nisi iste labore quae veritatis beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique illum ab minima distinctio vel libero veritatis saepe, totam, reprehenderit, consequatur accusamus. Aspernatur beatae perferendis architecto consequuntur velit odio iure veniam!'}
-              tags={['html', 'css']} />     
-            <Post
-              title='Commits semânticos'
-              text={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quia labore quasi unde sit ipsum fugit at ad reiciendis rem, corrupti doloremque et repudiandae sint saepe facilis? Molestiae, vitae accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam, vero dolorum aperiam rerum, veniam quod accusamus minus temporibus doloribus, minima consequuntur fugit. Quidem nisi iste labore quae veritatis beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique illum ab minima distinctio vel libero veritatis saepe, totam, reprehenderit, consequatur accusamus. Aspernatur beatae perferendis architecto consequuntur velit odio iure veniam!'}
-              tags={['html', 'css']} />
-
+          
           </div>
 
 
