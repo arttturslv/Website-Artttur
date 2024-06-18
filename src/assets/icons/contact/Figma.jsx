@@ -3,7 +3,7 @@ export default function Figma({action}) {
     return (
         <svg
         onClick={action}
-        viewBox="0 0 33 33"
+        viewBox="0 0 36 36"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="pointer pt-0.5  hover:scale-105 ease-in-out w-10 h-10"

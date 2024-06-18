@@ -14,6 +14,8 @@ import guru1 from '../../assets/projects/guru1.webp'
 
 import jogodavelha from '../../assets/projects/jogodavelha.webp'
 
+import alarmme from '../../assets/projects/alarmme.webp'
+
 export default function Projetos({ title, text, githubURL }) {
 
   return (
@@ -33,7 +35,7 @@ export default function Projetos({ title, text, githubURL }) {
         />
 
         <ProjetoItem
-          title={"Jogo da Velha 💘"}
+          title={"Jogo da Velha 🎮"}
           text="Este projeto foi desenvolvido para praticar o uso do React Native, bem como a utilização do React Navigation (stack) e o suporte a múltiplos idiomas com o i18next, que alterna entre português e inglês. O jogo está disponível em APK no GitHub."
           githubURL={'https://github.com/arttturslv/tic-tac-toe'}
           initialImage={jogodavelha}
@@ -52,7 +54,7 @@ export default function Projetos({ title, text, githubURL }) {
         />
 
         <ProjetoItem
-          title={"Guru sabedoria 💘"}
+          title={"Guru sabedoria ⛩"}
           text='Este projeto foi desenvolvido utilizando HTML, CSS, JS e Bootstrap. O foco deste trabalho foi reforçar os conhecimentos sobre APIs, além de entender mais sobre animações CSS e o modo noturno. Também foi meu primeiro contato com o design de interfaces, onde, antes de tudo, pensei em como o website seria e como os elementos se complementariam. Foi possível aprender animações "infinite" para fazer o monge flutuar, o modo noturno que muda o fundo de azul para amarelo, a animação de digitação para exibir o conteúdo recebido pela API e também sobre efeitos sonoros e como os navegadores os bloqueiam até que o usuário interaja com a tela (aplicado ao clicar no monge).'
           githubURL={'https://github.com/arttturslv/Guru-sabedoria'}
           websiteURL={'https://arttturslv.github.io/Guru-sabedoria/'}
@@ -60,6 +62,16 @@ export default function Projetos({ title, text, githubURL }) {
           images={[guru1]}
           devProgress={'done'}
           tags={['css', 'html', 'javascript']}
+        />
+
+        <ProjetoItem
+          title={"Alarmme ⏰"}
+          text='Este projeto está sendo desenvolvido utilizando React Native e Expo. O objetivo principal é aprofundar o conhecimento em desenvolvimento de aplicações mobile, explorando a implementação de animações e transições, além de trabalhar com timers, permissões e notificações.'
+          githubURL={'https://github.com/arttturslv/alarmme'}
+          figmaURL={'https://www.figma.com/design/Nwkstcm1kFMWWd4zqIRbrn/alarmme---mobile?node-id=0-1&t=ZZOQ8aeG8L06qB81-1'}
+          initialImage={alarmme}
+          devProgress={'doing'}
+          tags={['react-native', 'stack-navigation', 'react-animated']}
         />
         
       </div>

@@ -4,10 +4,11 @@ import ProjetoImage from "../ProjetoImage.jsx"
 import WebsiteIcon from '../../assets/icons/contact/Website.jsx'
 import IconExpander from "../IconExpander.jsx"
 import GithubIcon from '../../assets/icons/contact/Github.jsx'
+import FigmaIcon from '../../assets/icons/contact/Figma.jsx'
 
 import { motion } from "framer-motion"
 
-export default function ProjetoItem({title, text, githubURL, websiteURL, initialImage, images, devProgress, tags}) {
+export default function ProjetoItem({title, text, githubURL, websiteURL, figmaURL, initialImage, images, devProgress, tags}) {
     return (
         <motion.div 
         
@@ -22,6 +23,7 @@ export default function ProjetoItem({title, text, githubURL, websiteURL, initial
                 <div className="flex absolute right-0 bottom-0 justify-end p-4">
                    {githubURL? <IconExpander action={() => window.open(githubURL)} IconJSX={<GithubIcon/>} text='/github' /> :<></>} 
                    {websiteURL? <IconExpander action={() => window.open(websiteURL)} IconJSX={<WebsiteIcon/>} text='/website' /> :<></>} 
+                   {figmaURL? <IconExpander action={() => window.open(figmaURL)} IconJSX={<FigmaIcon/>} text='/figma' /> :<></>} 
                 </div>
             </div>
             <div className="lg:w-[50%]">
