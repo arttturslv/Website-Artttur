@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider, createHashRouter } from 'react-rou
 
 import Home from './pages/Home.jsx';
 import Blog from './pages/Blog.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 export default function App() {
 
@@ -19,6 +20,10 @@ export default function App() {
       {
         path: "/b-log",
         element: <Blog theme={theme} setTheme={setTheme}/>
+      },
+      {
+        path: "*",
+        element: <NotFound theme={theme} setTheme={setTheme}/>
       }
     ])
 
