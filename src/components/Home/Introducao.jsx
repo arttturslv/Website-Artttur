@@ -1,14 +1,25 @@
 import { useState } from 'react';
+
 import Caricatura from '../../assets/Caricatura.jsx'; // Ajuste o caminho conforme necessário
 import GithubIcon from '../../assets/icons/contact/Github.jsx'
 import LinkedinIcon from '../../assets/icons/contact/Linkedin.jsx'
+import VisitaIcon from '../../assets/icons/contact/Visita.jsx'
 import EmailIcon from '../../assets/icons/contact/Email.jsx'
 import CustomToolTip from "../CustomToolTip";
+import CardVisita from './CardVisita.jsx';
 import { motion } from 'framer-motion';
 
 
 export default function Introducao ({theme}) {
+
+  const [isCardVisitaVisible, setCardVisitaVisible] = useState(false)
+
         return (
+          <>
+          {
+            isCardVisitaVisible? 
+              <CardVisita theme={theme} setCardVisitaVisible={setCardVisitaVisible}/>
+          :
           <div className='flex max-lg:flex-col-reverse items-center justify-around px-16 py-16'>
             <motion.div  
             initial={{opacity:0, x: -165}}
@@ -26,6 +37,7 @@ export default function Introducao ({theme}) {
                 <GithubIcon action={() => window.open('https://github.com/arttturslv/')}  theme={theme}/>
                 <EmailIcon action={() => window.open('mailto:arttturslv@gmail.com')} theme={theme}/>
                 <LinkedinIcon action={() => window.open('https://www.linkedin.com/in/arttturslv/')} theme={theme}/>
+                <VisitaIcon  action={() => setCardVisitaVisible(true)} theme={theme}></VisitaIcon>
               </div>
             </motion.div>
             <motion.div 
@@ -40,6 +52,10 @@ export default function Introducao ({theme}) {
               </CustomToolTip>
             </motion.div>
           </div>
+
+          
+          }
+          </>
         )
         
 } 
