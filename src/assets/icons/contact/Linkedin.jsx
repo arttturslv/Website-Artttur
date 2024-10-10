@@ -15,7 +15,7 @@ export default function Linkedin ({theme, action}) {
     onClick={action}
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
-    className="pointer pt-0.5 hover:scale-105  ease-in-out w-10 h-10"
+    className="pointer pt-0.5 hover:scale-105 ease-in-out w-10 h-10  pl-1"
     >
     <path
       stroke={corPrimaria}
