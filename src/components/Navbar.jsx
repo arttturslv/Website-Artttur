@@ -35,9 +35,9 @@ export default function Navbar({setTheme, theme}) {
                         </div>
                     </ul>
                 </div>
-                <div className="md:hidden flex items-center gap-6" onClick={()=> {openMenu()}}>
-                    <div className="w-8 h-[20px]">
-                        <Menu  theme={theme}/>
+                <div className="md:hidden flex items-center gap-6">
+                    <div className="w-8 h-[20px]"  onClick={()=> {openMenu()}}>
+                        <Menu theme={theme}/>
                     </div>
                     <div className="size-10 flex items-center">
                         <Switch setTheme={setTheme}  theme={theme}/>
@@ -46,7 +46,7 @@ export default function Navbar({setTheme, theme}) {
             </div>
 
             <div id='menuMobile' className="overflow-hidden hidden w-full absolute left-0 top-16 align-middle">
-                <ul className=" text-right items-center border-y-[1px] border-jet">
+                <ul className=" text-right items-center border-y-[1px] border-jet dark:hover:border-platinum">
                     <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><HashLink  className=" pointer dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" to="\#about">Sobre</HashLink></li>
                     <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><HashLink  className=" pointer dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" to="\#knowledge">Skills</HashLink></li>
                     <li className=" px-3 pr-20 text-[1.2rem] group  hover:bg-jet dark:hover:bg-platinum"><HashLink  className=" pointer dark:text-platinum text-jet group-hover:text-platinum dark:group-hover:text-jet" to="\#projects">Projetos</HashLink></li>
