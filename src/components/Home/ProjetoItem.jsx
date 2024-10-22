@@ -27,8 +27,9 @@ export default function ProjetoItem({title, text, githubURL, websiteURL, figmaUR
                 </div>
             </div>
             <div className="lg:w-[50%]">
-                <div className="flex gap-1">
-                    <h5 className="text-[1.4rem]">{title} - </h5> 
+                <div className="flex gap-1 items-center">
+                    <h5 className="text-[1.4rem]">{title}</h5> 
+                    <h5 className="text-[1.4rem]">-</h5> 
                     <DevelopmentTag type={devProgress}/> 
                 </div>
                 <p className="sm:text-[1.1em] text-[0.9rem] text-left">{text}</p>
