@@ -33,7 +33,7 @@ export default function Post({id="45", title, tags, texts}) {
                         }
                     </div>
 
-                    <div className={`${isOpen? "h-full" : "h-[6rem]"} overflow-hidden`}>
+                    <div className={`${isOpen? "h-full" : "h-[6rem]"} overflow-hidden transition-all duration-200 `}>
                         {
                             texts.map((item, index)=> (
                                 <p key={index}>{item}</p>

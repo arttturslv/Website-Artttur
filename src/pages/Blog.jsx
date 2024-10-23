@@ -9,8 +9,8 @@ export default function Blog({ theme, setTheme }) {
         <div className="dark:text-platinum max-w-[1240px] w-full min-h-screen space-y-8 text-jet">
           <Navbar setTheme={setTheme} theme={theme} />
           <div className="flex-col h-[80%]">
-            <div className="flex items-center flex-col">
-              <code className="flex text-[18px] gap-2">
+            <div className="flex items-center gap-1 flex-col">
+              <code className="flex text-[18px] gap-2 group">
                 <h1>&#x0007B;</h1>
                 <h1 className="opacity-50 w-7 text-clip transition-all overflow-clip whitespace-nowrap group-hover:w-[25rem]">
                   basicamente um
