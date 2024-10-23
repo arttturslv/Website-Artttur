@@ -8,9 +8,10 @@ import Footer from '../components/Footer.jsx'
 import { useEffect } from 'react'
 
 export default function Home({theme, setTheme}) {
-
+  
     useEffect(() => {
-      console.log("──────▄▀▄─────▄▀▄\n─────▄█░░▀▀▀▀▀░░█▄\n─▄▄──█░░░░░░░░░░░█──▄▄\n█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█")
+      console.log('%c──────▄▀▄─────▄▀▄\n─────▄█░░▀▀▀▀▀░░█▄\n─▄▄──█░░░░░░░░░░░█──▄▄\n█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█', 'font-size:2rem')
+      console.log('%cwhat are u doing here? ( ͠° ͟ʖ ͡°) ', 'background: #722F37; font-size: 1.5rem')
     }, [])
 
     return (
