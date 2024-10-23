@@ -18,7 +18,7 @@ export default function App() {
         element: <Home theme={theme} setTheme={setTheme}/>
       },
       {
-        path: "/b-log",
+        path: "/blog",
         element: <Blog theme={theme} setTheme={setTheme}/>
       },
       {

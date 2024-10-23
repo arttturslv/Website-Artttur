@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "framer-motion": "^11.2.10",
+    "portifolio": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
