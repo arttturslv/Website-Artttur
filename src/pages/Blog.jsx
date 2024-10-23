@@ -24,18 +24,9 @@ export default function Blog({ theme, setTheme }) {
                 <h1>&#x0007D;</h1>
               </code>
               <Post
-                title="Template repository"
-                tags={["Github", "Tips"]}
+                title="Hello World"
                 texts={[
-                  "O GitHub é uma das plataformas mais populares para hospedagem de projetos e colaboração em código-fonte. Para desenvolvedores e equipes, ter um template de repositório padrão pode agilizar o processo de criação de novos projetos, garantindo que todos sigam as mesmas diretrizes e melhores práticas desde o início. Um template pode incluir estrutura de diretórios, arquivos de configuração, documentação e muito mais. Neste guia, vamos explorar como criar e utilizar um template de repositório padrão no GitHub. Então vamos lá, basta acessar sua conta, criar um novo repositorio, então adicione arquivos como pastas e documentos e modifique a README.md e a license. Depois de tudo isso feito, vá nas configurações do repositorio e marque como sim",
-                ]}
-              />
-
-              <Post
-                title="Template repository"
-                tags={["Github", "Tips"]}
-                texts={[
-                  "ão em código-fonte. Para desenvolvedores e equipes, ter um template de repositório padrão pode agilizar o processo de criação de novos projetos, garantindo que todos sigam as mesmas diretrizes e melhores práticas desde o início. Um template pode incluir estrutura de diretórios, arquivos de configuração, documentação e muito mais. Neste guia, vamos explorar como criar e utilizar um template de repositório padrão no GitHub. Então vamos lá, basta acessar sua conta, criar um novo repositorio, então adicione arquivos como pastas e documentos e modifique a README.md e a license. Depois de tudo isso feito, vá nas configurações do repositorio e marque como sim",
+                  "Parabéns, você encontrou um easter egg."
                 ]}
               />
             </div>
