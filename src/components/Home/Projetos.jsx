@@ -18,7 +18,9 @@ import guru1 from '../../assets/projects/guru1.webp'
 
 import jogodavelha from '../../assets/projects/jogodavelha.webp'
 
-import alarmme from '../../assets/projects/alarmme.webp'
+import congrats from '../../assets/projects/congrats1.webp'
+import congrats2 from '../../assets/projects/congrats2.webp'
+import congrats3 from '../../assets/projects/congrats3.webp'
 
 export default function Projetos({ title, text, githubURL }) {
 
@@ -27,6 +29,18 @@ export default function Projetos({ title, text, githubURL }) {
     <section id="projects" className='sm:px-16 px-6'>
       <h2>Projetos</h2>
       <div id="" className='flex flex-wrap gap-12 py-3 px-2 justify-center'>
+        
+      <ProjetoItem
+          title={"Congrats"}
+          text='O projeto foi desenvolvido com React e Node, permitindo que os usuários criem mensagens personalizadas para celebrar ocasiões especiais, como Natal, aniversários, amizades, entre outros. A proposta é tornar cada celebração única e especial.'
+          githubURL={'https://github.com/arttturslv/Congrats'}
+          websiteURL={'https://c.artttur.com/'}
+          initialImage={congrats}
+          images={[congrats2, congrats3]}
+          devProgress={'done'}
+          tags={['react', 'javascript', 'tailwind', 'node', 'express', 'mongoose']}
+        />
+        
         <ProjetoItem
           title={"Posta aí"}
           text="Este projeto foi desenvolvido com React e Tailwind no frontend, Node.js no backend e MongoDB como banco de dados. A ideia principal deste projeto foi disponibilizar um site em que qualquer pessoa pudesse contribuir colocando anotações na homepage."
@@ -47,16 +61,6 @@ export default function Projetos({ title, text, githubURL }) {
           images={[minimiza1]}
           devProgress={'done'}
           tags={['react', 'node.js', 'mongodb', 'tailwind', 'express', 'mongoose']}
-        />
-
-        <ProjetoItem
-          title={"Alarmme"}
-          text='Este projeto está sendo desenvolvido utilizando React Native e Expo. O objetivo principal é aprofundar o conhecimento em desenvolvimento de aplicações mobile, explorando a implementação de animações e transições, além de trabalhar com timers, permissões e notificações.'
-          githubURL={'https://github.com/arttturslv/alarmme'}
-          figmaURL={'https://www.figma.com/design/Nwkstcm1kFMWWd4zqIRbrn/alarmme---mobile?node-id=0-1&t=ZZOQ8aeG8L06qB81-1'}
-          initialImage={alarmme}
-          devProgress={'doing'}
-          tags={['react-native', 'stack-navigation', 'react-reanimated']}
         />
 
         <ProjetoItem
